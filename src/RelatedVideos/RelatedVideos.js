@@ -5,7 +5,7 @@ import RelatedVideo from "../RelatedVideo/RelatedVideo";
 class RelatedVideos extends Component {
 	render() {
 		var relatedVideos = this.props.videoData.map((video) => {
-			return <RelatedVideo key={video.id} video={video} />
+			return <RelatedVideo key={video.id} video={video} onVideoLinkPress={this.props.onVideoLinkPress}/>
 		});
 
 		return (

@@ -9,10 +9,13 @@ const videoData = [
 ]
 
 class App extends Component {
+	onVideoLinkPress(videoId) {
+	}
+
 	render() {
 		return (
 			<div className="App">
-				<RelatedVideos videoData={videoData} />
+				<RelatedVideos videoData={videoData} onVideoLinkPress={this.onVideoLinkPress.bind(this)} />
 			</div>
 		);
 	}
