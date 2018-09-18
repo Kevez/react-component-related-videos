@@ -1,2 +1,2 @@
-# React component - Related videos
+# Related videos component
 A React component for displaying related videos
